@@ -148,7 +148,8 @@ def prebook():
         db.session.add(booking)
         db.session.commit()
 
-        # ---- Send backend email (CORRECT PLACE) ----
+            # ---- Send backend email (CORRECT PLACE) ----
+    try:
         send_prebook_email({
             "name": customer_name,
             "email": customer_email,
@@ -157,6 +158,9 @@ def prebook():
             "country": customer_country,
             "products": product_details
         })
+    except Exception as e:
+        print("Email failed (SMTP blocked on Render):", e)
+
 
         flash("Pre-booking submitted successfully! Email sent.", "success")
         return redirect(url_for("home"))
