@@ -3,6 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime 
 import smtplib
 from email.message import EmailMessage
+import stripe
 import os
 from dotenv import load_dotenv
 
