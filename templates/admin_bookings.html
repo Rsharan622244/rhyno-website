@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Bookings</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <style>
+    body{background:#000;color:#fff;font-family:Arial}
+    table{width:95%;margin:20px auto;border-collapse:collapse}
+    th,td{border:1px solid #333;padding:10px;text-align:center}
+    th{background:#111}
+    a.del{color:#ff6666;text-decoration:none}
+    .top{width:95%;margin:12px auto;text-align:right}
+  </style>
+</head>
+<body>
+  <div class="top">
+    <a href="{{ url_for('admin_dashboard') }}" style="color:#ffcc00;text-decoration:none">Back to Dashboard</a>
+  </div>
+
+  <table>
+    <tr>
+      <th>ID</th><th>Name</th><th>Email</th><th>State</th><th>Lite</th><th>SE03</th><th>Max</th><th>Time</th><th>Action</th>
+    </tr>
+    {% for b in bookings %}
+    <tr>
+      <td>{{ b.id }}</td>
+      <td>{{ b.customer_name }}</td>
+      <td>{{ b.customer_email }}</td>
+      <td>{{ b.customer_state or '' }}</td>
+      <td>{{ b.se03lite_qty }}</td>
+      <td>{{ b.se03_qty }}</td>
+      <td>{{ b.se03max_qty }}</td>
+      <td>{{ b.created_at.strftime("%Y-%m-%d %H:%M") }}</td>
+      <td>
+        <form action="{{ url_for('admin_delete', id=b.id) }}" method="POST" style="display:inline">
+          <button type="submit" class="del">Delete</button>
+        </form>
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+</body>
+</html>

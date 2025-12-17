@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhyno automobiles</title>
+    <link rel="icon" type="image" href="https://res.cloudinary.com/dafpg6hn0/image/upload/v1719165065/Black_logo_for_B_W_print_etylrj.png">
+    
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+    
+    <div class="menu">
+        <ul class="options">
+            <li><a href="#"><img class="lpic" src="https://res.cloudinary.com/dafpg6hn0/image/upload/v1719165065/Black_logo_for_B_W_print_etylrj.png"  > </a></li>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About us</a></li>
+            <li ><a href="#">Products</a>
+                <ul id="submenu">
+                    <li><a href="{{ url_for('se03lite') }}">SE03 Lite</a></li>
+                    <li><a href="{{ url_for('se03') }}">SE03</a></li>
+                    <li><a href="{{ url_for('se03max') }}">SE03 Max</a></li>
+                    <li><a href="{{ url_for('compare') }}">compare</a></li>
+                </ul>
+                </li>
+            <li><a class="active" href="{{ url_for('prebook') }}">Pre-book</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact us</a></li>
+            <li><a href="https://www.instagram.com/accounts/login/?hl=en"><img class="insta" src="https://static.vecteezy.com/system/resources/previews/022/498/176/non_2x/3d-render-camera-icon-isolated-on-transparent-background-camera-logo-for-web-site-app-ui-and-logo-free-png.png" alt="instagram" ></a>
+                <a href="https://www.linkedin.com/login"><img class="lin" src="https://www.pagetraffic.com/blog/wp-content/uploads/2022/09/linkedin-black-logo-icon.png" alt="linkedin" >
+                </a>
+            </li>
+    </div>
+    
+    <div class="container">
+        <form action="{{ url_for('prebook') }}" method="POST">
+            <div class="row">
+                <div class="col">
+                    <h2>Product</h2>
+                    <div class="inputbox">
+                        <input type="checkbox" id="se03lite_selected" name="se03lite_selected"> SE03 Lite 
+                        <span>Qty :</span>
+                        <input type="number" id="se03lite_qty" name="se03lite_qty" placeholder="no.of bikes"> 
+                        <br>
+
+                        <input type="checkbox" id="se03_selected" name="se03_selected"> SE03
+                        <span>Qty :</span>
+                        <input type="number" id="se03_qty" name="se03_qty" placeholder="no.of bikes">
+                        <br>
+
+                        <input type="checkbox" id="se03max_selected" name="se03max_selected"> SE03 Max
+                        <span>Qty :</span>
+                        <input type="number" id="se03max_qty" name="se03max_qty" placeholder="no.of bikes">
+                    </div>
+
+                    <h1>Customer Details</h1>
+
+                    <div class="inputbox">
+                        <span>Name :</span>
+                        <input type="text" id="customer_name" name="customer_name" placeholder="name" required>
+                    </div>
+
+                    <div class="inputbox">
+                        <span>Age :</span>
+                        <input type="number" name="customer_age" placeholder="age">
+                    </div>
+
+                    <div class="inputbox">
+                        <span>Gender :</span>
+                        <input type="radio" name="customer_gender" value="male"> Male
+                        <input type="radio" name="customer_gender" value="female"> Women
+                        <input type="radio" name="customer_gender" value="other"> Other
+                    </div>
+
+                    <div class="inputbox">
+                        <span>E-Mail :</span>
+                        <input type="email" id="customer_email" name="customer_email" placeholder="mail" required>
+                    </div>
+
+                    <div class="inputbox">
+                        <span>Address :</span>
+                        <input type="text" id="customer_address" name="customer_address" placeholder="H.no:,colony,locality">
+                    </div>
+
+                    <div class="inputbox">
+                        <span>State :</span>
+                        <input type="text" id="customer_state" name="customer_state" placeholder="state">
+                    </div>
+
+                    <div class="inputbox">
+                        <span>Nationality :</span>
+                        <input type="text" id="customer_country" name="customer_country" placeholder="country">
+                    </div>
+                </div>
+                
+
+                <!-- PAYMENT COLUMN -->
+                <div class="col">
+                    <h1>Payment Details</h1>
+
+                    <div class="inputbox">
+                        <span>Cards accepted :</span>
+                        <img class="pglogo" src="https://upload.wikimedia.org/wikipedia/commons/b/b7/MasterCard_Logo.svg">
+                        <img class="pglogo" src="https://upload.wikimedia.org/wikipedia/commons/d/d1/RuPay.svg">
+                        <img class="pglogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/640px-Visa_Inc._logo.svg.png">
+                    </div>
+
+                    <div class="inputbox">
+                        <span>Card no :</span>
+                        <input type="number" name="card_number" placeholder="0000-0000-0000" required>
+                    </div>
+
+                    <div class="inputbox">
+                        <span>Expiry date :</span>
+                        <input type="date" name="expiry_date" required>
+                    </div>
+
+                    <div class="inputbox">
+                        <span>CVV no :</span>
+                        <input type="number" name="cvv" placeholder="000" required>
+                    </div>
+
+                    <div class="inputbox">
+                        <span>Nationality :</span>
+                        <input type="text" name="payment_country" placeholder="country">
+                    </div>
+
+                    <div class="pbutton">
+                        <input class="pgbutton" type="submit" value="Submit details">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>    
+</body>
+</html>

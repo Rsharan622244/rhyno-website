@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhyno automobiles</title>
+    <link rel="icon" type="image" href="https://res.cloudinary.com/dafpg6hn0/image/upload/v1719165065/Black_logo_for_B_W_print_etylrj.png">
+    
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <style>
+        
+        
+    </style>
+</head>
+<body>
+    <div class="cursor"></div>
+
+    <script>
+        const cursor = document.querySelector('.cursor');
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px) rotate(${window.scrollY}deg)`;
+            cursor.style.opacity = 1; // Show the cursor when moving
+        });
+
+        // Hide the cursor when not moving
+        document.addEventListener('mouseout', () => {
+            cursor.style.opacity = 0;
+        });
+    </script>
+    <div class="menu">
+        <ul class="options">
+            <li><a href="#"><img class="lpic" src="https://res.cloudinary.com/dafpg6hn0/image/upload/v1719165065/Black_logo_for_B_W_print_etylrj.png" > </a></li>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About us</a></li>
+            <li ><a href="#">Products</a>
+                <ul id="submenu">
+                    <li><a href="{{ url_for('se03lite') }}">SE03 Lite</a></li>
+                    <li><a href="{{ url_for('se03') }}">SE03</a></li>
+                    <li><a href="{{ url_for('se03max') }}">SE03 Max</a></li>
+                    <li><a href="{{ url_for('compare') }}">compare</a></li>
+                </ul>
+                </li>
+            <li><a href="{{ url_for('prebook') }}">Pre-book</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact us</a></li>
+            <li><a href="https://www.instagram.com/accounts/login/?hl=en"><img class="insta" src="https://static.vecteezy.com/system/resources/previews/022/498/176/non_2x/3d-render-camera-icon-isolated-on-transparent-background-camera-logo-for-web-site-app-ui-and-logo-free-png.png" alt="instagram" ></a>
+                <a href="https://www.linkedin.com/login"><img class="lin" src="https://www.pagetraffic.com/blog/wp-content/uploads/2022/09/linkedin-black-logo-icon.png" alt="linkedin" >
+                </a>
+            </li>
+    </div>
+        <div class="product1">
+            <div id="pbox" class="product1pic">
+                <img class="rpic" src="https://res.cloudinary.com/dafpg6hn0/image/upload/t_editedgroupbikes/v1719288354/Copy_of_grp_xlqcgz.png" alt="bike">
+            </div>
+                <div id="pbox" class="product1text">
+                    <h1 class="product1head" style="text-decoration: underline;">RENTALS</h1>
+                    <p><br>Explore the roars of Rhyno at your own pace with our rental options! Test the waters with our flexible rental model,
+                         available for a week or a month, allowing you to experience the Rhyno first hand before committing.
+                          Simply visit our authorized dealerships to unlock this opportunity.
+                         Additionally, we're redefining campus commuting with our rental fleet tailored for college students.
+                         Navigate your daily commute effortlessly by renting Rhyno vehicles on an hourly basis through our user-friendly mobile app.
+                          Embrace the freedom to ride and explore a new dimension in sustainable and convenient transportation.
+                         <br> <br><br>
+                    </p>
+                    <div class="pbutton" id="radbutton">
+                        <p>Download our rental app :  <br> </p>
+                    <a href="#" class="ricon" id="ricon" ><div><img class="radlog" id="radlogo" src="https://icon-icons.com/downloadimage.php?id=100108&root=1463/PNG/512/&file=android-black_100108.png" alt="android" height="30px"> <p class="rtext">android</p>  </div>  </a>
+                    <a href="#" class="ricon" id="ricon" ><div><img class="radlog" id="radlogo" src="https://th.bing.com/th/id/R.66dacd13d1a786cad40e9197159da06a?rik=BldOAxOEicVH%2bw&riu=http%3a%2f%2flogos-download.com%2fwp-content%2fuploads%2f2017%2f07%2fApple_logo_black.png
+                        &ehk=dOqdt5GR5Bk0d646HmWvFDgSaTN%2bi3hyx8GMv0B2Kd0%3d&risl=&pid=ImgRaw&r=0" alt="apple" height="30px"> <p class="rtext">apple</p>  </div>  </a>
+
+                    </div>
+                </div>
+            </div>
+    </div>    
+    <div class="footer">
+        <ul class="footer">
+             <li><a href="{{ url_for('admin_login') }}">Admin</a></li>
+            <li><a href="#">Refund policy</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact us</a></li>
+            <li><a href="{{ url_for('compare') }}">Products</a></li>
+            <li><a href="https://www.linkedin.com/login">Career</a></li>
+            <li><a class="active" href="{{ url_for('rentals') }}">Rentals</a></li>
+            <li><a href="https://www.instagram.com/accounts/login/?hl=en"><img class="insta" src="https://static.vecteezy.com/system/resources/previews/022/498/176/non_2x/3d-render-camera-icon-isolated-on-transparent-background-camera-logo-for-web-site-app-ui-and-logo-free-png.png" alt="instagram" ></a>
+                <a href="https://www.linkedin.com/login"><img class="lin" src="https://www.pagetraffic.com/blog/wp-content/uploads/2022/09/linkedin-black-logo-icon.png" alt="linkedin" >
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1350 @@
+*{box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif!important;
+box-sizing: border-box;
+object-fit: contain;}
+body{padding: 0%;
+    margin: 0%;}
+
+div.menu{
+        font-size: 20px;
+    display: inline;
+    position: sticky;
+
+z-index: 999;}
+ul.options{list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    text-align: center;
+    }
+
+li {float: left;}    
+ul.options li a{display: inline-block;
+    padding: 55px;                                  /* with out padding collapse*/
+     padding-bottom: 0%;
+    list-style-type:none;
+    text-decoration: none;
+    color: black;}
+
+ul.options{position: -webkit-sticky; 
+    position: sticky;
+top: 0%;}
+
+ul.option a:hover{background-color:transparent;
+    color: darkgray;}
+
+div.introtext{font-size: 30px;
+    
+    font-weight: 600;
+text-align: center;
+color: black;
+
+}
+
+img.lpic{height: 50px;}
+img.insta{height: 30px;}
+img.lin{height: 30px;}
+.homepic1{background-color: darkgray;height: 400px;
+}
+p.htext{padding-top: 40px;}
+
+.homepic{background-color: black;height:500px;padding-top: 400px;}
+
+img.bpic2{height: 300px;left: 500px;padding-left: 140px;}
+
+img.bpic1{height: 300px;}
+
+.bikebutton{padding-left: 35%;padding-bottom: 10px;}
+img.hpic2{width: 1500px;}
+p.head{text-align: center;}
+p#modelname{text-align: center;}
+                                    /*             downlink                      */
+
+ul#submenu {text-decoration: none;
+    list-style-type: none;
+        opacity: 1;
+        left: 550px;
+        position: fixed;
+        display:flex;
+        flex-direction: column;
+        background-color:white;
+        border-radius: 10px;
+        padding: 20px !important;
+       }
+
+ul#submenu a{
+text-align: center;
+text-decoration: none;}
+
+ul#submenu a:hover{color: white;}   
+
+#submenu{left: 0;
+opacity: 0;position: absolute;visibility:hidden;z-index: 1;}
+
+li:hover ul#submenu{opacity: 1;visibility: visible;background-color:darkgrey;min-width: 250px;}
+
+#submenu li{float: none;width: 100%;}
+
+
+                                          /*     floting button         */
+div.floatingbutton{
+            position:fixed;
+            height: 100px;
+             width: 100px;
+            bottom: 0px;
+            right: 0px;
+            margin: 25px 75px;}
+div.floatingbutton a{background-color:#FFF225;
+                color: black;
+                padding: 10px 25px;
+                text-align: center;
+                text-decoration: none;
+                display: inline;
+                font-size: 25px;
+                font-weight: 600;
+                border-radius: 5px;
+                font-family:'Calibri';
+                }
+div.floatingbutton :hover{padding:15px 30px;}
+
+ul.footer{list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    text-align: center;
+    overflow: hidden;}
+
+ul.footer li a{display: inline-block;
+    list-style-type: none;
+    padding: 40px;                                     /* with out padding collapse*/ 
+    font-size: 20px;
+    font-weight: 600f;
+    padding-bottom: 20px;
+    list-style-type:none;
+    text-decoration: none;
+    color: black;}
+
+ul.footer{position: -webkit-sticky; 
+        position: sticky;
+         top: 100%;}
+
+ul.options li a:hover,
+ul.footer a:hover,
+ul.options li a.active,
+ul.footer a.active{background-color:transparent;
+                   color: darkgrey;
+                font-size: 25px;}
+
+ div.biketext{font-size: 30px;
+                    font-weight: 600;
+                text-align: center;
+                color:darkgray;
+                    }
+div.introtext2{font-size: 30px;
+                        font-weight: 600;
+                    text-align: left;
+                    color: black;
+                      }
+
+div.bikepics{display: flex;
+            padding-bottom: 100px; 
+            flex-direction: column;
+            background-color: black;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly ;
+            gap: 20px;
+
+            }
+div.bikepic:hover{height: 400px;
+width: 50%;}
+
+div.bikepic{background-color: darkgrey;
+            width: 45%;
+             border-radius: 30px;}
+div.bikepic a{background-color:#FFF225;
+                border:2px black;
+                color: black;
+                padding: 5px 50px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 25px;
+                font-weight: 600;
+                border-radius: 5px;
+                font-family:'Calibri';
+                }
+
+                                                                     /* ABOUT US TEXT DESIGN */
+div.abouttext{font-size: 25px;
+            font-family:'Calibri';
+            font-weight: 300;
+            font-size: 25px;
+            width: 50%;
+            text-align: right;
+            background: black ;
+            color: darkgrey;
+            padding-right: 2%;
+            }
+
+.apic{width: 750px;}
+div.aboutpic{background-color:darkgrey;
+            width: 50%;
+            height: 432px;}
+div.aboutus{align-items: center;
+             display: table;
+            
+       }
+h1.abouthead{text-align: center ;
+             font-size: 30px;
+            text-decoration: underline;}
+#box{float:left;
+    height: 600px;
+    
+    }
+
+                                                                               /*    product1    */
+div.product1text{font-size: 25px;
+                    font-family:'Calibri';
+                    font-weight: 300;
+                    font-size: 25px;
+                    width: 50%;
+                    text-align: left;
+                    background: black ;
+                    padding-left: 2%;
+                    color:darkgrey;
+                    padding-top: 45px;
+                        }
+div.product1pic{
+    padding-top: 70px;
+    background-color:darkgrey;
+                    width: 50%;
+                    height: 400px;
+                  }
+div.product1{align-items: center;
+                     display: table;
+                       }
+h1.product1head{text-align: center ;
+                font-size: 30px;
+                text-decoration: underline;}
+#pbox{float:left;
+        height: 600px;
+                }
+#pbox a{background-color:#FFF225;
+    border:2px black;
+    color: black;
+    padding: 5px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 5px;
+    font-family:'Calibri';
+    }
+img.p1pic{width: 900px;}
+p.pctext{font-size: 20px;font-weight: 800;text-align: center;}
+table.p1table{color:darkgray;width: 700px;}
+#p1button{padding-left: 28%;}
+.p1lpic{width: 100%;background-color:darkgray;}
+
+
+
+/*product 2                                          */
+.p2car{width: 680px;height: 550px !important;}
+
+img.p2pic{width:750px ;}
+
+               /*     contactus      */
+div.contactlink{align-items: last baseline;
+                display: flex;
+                justify-content: space-evenly;
+               }
+div.contactlink a{text-decoration: none;
+                font-size: 25px;
+                color: darkgray;
+                font-family:'Calibri';}
+#cocontacklink{background-color: darkgrey;height:200px}
+
+#cocontacklink1{padding-left: 100px;  background-color: black;height:280px ;align-items: first baseline;color: darkgrey;text-decoration: none;} /*////////////////////notchanged/////////////////*/
+
+#pcarousel{width: 680px;height: 500px;}
+
+
+                /*                           product 3                               */
+
+img.p3pic{width: 750px;}
+#p2box{float:left;
+                    height: 1250px;
+                            }
+#p2box a{background-color:#FFF225;
+                border:2px black;
+                color: black;
+                padding: 5px 50px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 25px;
+                font-weight: 600;
+                border-radius: 5px;
+                font-family:'Calibri';
+                }
+
+th,td{padding: 10px;}  
+th{text-decoration: underline;}    
+
+.prevp3-btn {
+  top: 1250px!important;
+  left: 50px;
+}
+
+.nextp3-btn {
+  top: 1250px!important;
+  left:600px;
+}
+
+ /*                            comparetext                             */
+
+div.introtext table,th,td {border: 2px solid darkgrey;
+                            border-collapse: collapse;
+                            border-spacing: 100px;
+                          }
+.introtext{background-color: black;}
+
+div.introtext table{border-spacing: 100px;
+                    border-radius: 10px;}
+
+.introtext p {text-decoration: underline;font-family: calibri;color: darkgrey;padding-bottom: 40px;}
+
+.contactlink {padding-left: 100px;  background-color:darkgrey;align-items: first baseline;color: darkgrey;text-decoration: none;}
+
+table.ctable{color: black;font-family: calibri;text-align: left;width: 1200px;font-size: 20px;padding: 50px;}
+  
+
+ /*                           payment gateway                      */
+.container{display:flex;justify-content: center; background-color: darkgray;
+    background-image: -webkit-image-set("https://res.cloudinary.com/dafpg6hn0/image/upload/v1719165065/Black_logo_for_B_W_print_etylrj.png" );background-size:1800px ;
+    border-image-repeat: none;
+    align-items:center;
+          min-height: 100vh; }
+
+.row{background-color:white;
+    opacity: 0.6;
+width:500px;
+border-radius: 10px;
+font-size: 18px;
+padding: 20px;
+
+
+}
+img.pglogo{height: 20px;}
+.inputbox{padding: 5px;}
+.input{align-items: flex-ends;}
+ .row:hover{opacity: 1;}
+ .pgbutton{width:450px;background-color:yellow;height: 30px;font-size: 20px;font-weight: 600;}
+
+
+
+/*                       horizontal carousel                    */
+  
+#carousel {
+    display: flex;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+  
+    margin: 0 auto 0 auto;
+    width: 90vw;
+    height: fit-content;
+    
+    border: solid #F3E6FF .5px;
+  }
+  
+  #carousel::-webkit-scrollbar {
+    display: none; 
+    -webkit-overflow-scrolling: touch; 
+  }
+  
+  .itemcaro {padding: 20px;
+    min-width: 600px;
+    min-height: 25vh;
+    margin: 15px;
+  
+    font-size: 20px;
+    text-align: center;
+   
+    background-color:darkgray;
+    border-radius: 7px;
+  }
+  #carousel{width:680px;}
+
+
+                                /*            cursor effect          */
+  .cursor {
+    width: 20px;
+    height: 20px;
+    background-color: #495057;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9999;
+    pointer-events: none;
+    transition: transform 0.3s;
+    opacity: 0; /* Initially hidden */
+}
+
+
+/*        colorbutton                       */
+.carousel-btn {
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .prev3-btn {
+    top: 700px;
+    left: 50px;
+  }
+
+  .next3-btn {
+    top: 700px;
+    left:600px;
+  }
+  .prev2-btn {
+    top: 1100px;
+    left: 50px;
+  }
+
+  .next2-btn {
+    top: 1100px;
+    left:600px;
+  }
+
+
+
+  /*rental                                           */
+  img.rpic{width:900px ;}
+
+#radbutton{display: flex;align-items: center;justify-content: space-evenly;}
+
+
+p.rtext{font-size: 10px;}
+
+
+  /*                    making responsive                            */
+
+  @media(max-width:1100px){*{box-sizing: border-box;
+    padding: 0%;
+    margin: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif!important;
+box-sizing: content-box;
+object-fit: contain;}
+body{padding: 0%;
+    margin: 0%;}
+
+div.menu{
+        font-size: 20px;
+    display:inline-block;
+    position: sticky;
+    z-index: 999;}
+ul.options{list-style-type: none;
+   display: flex;
+   flex-wrap:wrap;
+    background-color: white;
+    text-align: center;
+    }
+
+li {float: left;}    
+ul.options li a{display: inline-block;
+    padding: 5px;                                  /* with out padding collapse*/
+    padding-bottom: 0%;
+    list-style-type:none;
+    text-decoration: none;
+    color: black;}
+
+ul.options{position: -webkit-sticky; 
+    position: sticky;
+    top: 0%;}
+
+ul.option a:hover{background-color:transparent;
+    color: darkgray;}
+
+div.introtext{font-size: 30px;
+    
+    font-weight: 600;
+text-align: center;
+color: black;
+
+}
+
+img.lpic{height: 50px;}
+img.insta{height: 30px;}
+img.lin{height: 30px;}
+.homepic1{background-color: darkgray;height: 400px;width: 400px;
+}
+p.htext{padding-top: 40px;}
+
+.homepic{background-color: black;height:500px;padding-top: 400px;width: 400px;}
+
+img.bpic2{height: 300px;left: 500px;padding-left: 140px;}
+
+img.bpic1{height: 300px;}
+
+.bikebutton{padding-left: 35%;padding-bottom: 10px;
+}
+
+a#bikebutton{height: 40px;font-size: 13px;}
+img.hpic2{width: 1500px;}
+p.head{text-align: center;}
+p#modelname{text-align: center;}
+                                    /*             downlink                      */
+
+ul#submenu {text-decoration: none;
+    list-style-type: none;
+        opacity: 1;
+        left: 550px;
+        position: fixed;
+        display:flex;
+        flex-direction: column;
+        background-color:white;
+        border-radius: 10px;
+        padding: 20px !important;
+       }
+
+ul#submenu a{
+text-align: center;
+text-decoration: none;}
+
+ul#submenu a:hover{color: white;}   
+
+#submenu{left: 0;
+opacity: 0;position: absolute;visibility:hidden;z-index: 1;}
+
+li:hover ul#submenu{opacity: 1;visibility: visible;background-color:darkgrey;min-width: 250px;}
+
+#submenu li{float: none;width: 100%;}
+
+
+                                          /*     floting button         */
+div.floatingbutton{opacity: 0.8;
+            position:fixed;
+            height: 60px;
+             width: 60px;
+            top: 600px!important;
+            left: 150px;
+            margin: 25px 75px;}
+div.floatingbutton a{background-color:#FFF225;
+                color: black;
+                padding: 10px 25px;
+                text-align: center;
+                text-decoration: none;
+                display: inline;
+                font-size: 25px;
+                font-weight: 600;
+                border-radius: 5px;
+                font-family:'Calibri';
+                }
+div.floatingbutton :hover{padding:15px 30px;}
+
+ul.footer{list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+    margin: 0;
+    padding: none;
+    background-color: white;
+    text-align: center;
+    overflow: visible;}
+
+ul.footer li a {display:flex;
+  flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0px;                                     /* with out padding collapse*/ 
+    font-size: 10px!important;
+    font-weight: 600;
+    padding-bottom: 2px;
+    list-style-type:none;
+    text-decoration: none;
+    color: black;}
+
+ul.footer{position: -webkit-sticky; 
+        position: sticky;
+         top: 100%;}
+
+ul.options li a:hover,
+ul.footer a:hover,
+ul.options li a.active,
+ul.footer a.active{background-color:transparent;
+                   color: darkgrey;
+                font-size: 25px;}
+
+ div.biketext{font-size: 30px;
+                    font-weight: 600;
+                text-align: center;
+                color:darkgray;
+                    }
+.hcar{width: 300px!important;}
+div.introtext2{font-size: 30px;
+                        font-weight: 600;
+                    text-align: left;
+                    color: black;
+                      }
+
+div.bikepics{align-content: center;
+
+            }
+div.bikepic:hover{height: 400px;
+width: 50%;}
+
+div.bikepic{background-color: darkgrey;
+            width: 45%;
+             border-radius: 30px;
+            left: 0;}
+div.bikepic a{background-color:#FFF225;
+                border:2px black;
+                color: black;
+                padding: 5px 50px;
+                text-align: center;
+                font-size: 25px;
+                font-weight: 600;
+                border-radius: 5px;
+                font-family:'Calibri';
+                }
+
+                                                                     /* ABOUT US TEXT DESIGN */
+div.abouttext{font-size: 10px!important;
+            font-family:'Calibri';
+            font-weight: 300;
+            font-size: 25px;
+            width:195px!important;
+            text-align: right;
+            background: black ;
+            color: darkgrey;
+            padding-right: 2%;
+            height: 400px!important;
+            }
+
+.apic{width: 200px!important;}
+div.aboutpic{background-color:darkgrey;
+            width: 195pximportant;
+            height: 400px!important;}
+div.aboutus{align-items: center;
+             display: table;
+            
+       }
+h1.abouthead{text-align: center ;
+             font-size: 30px;
+            text-decoration: underline;}
+#box{float:left;
+    height: 600px;
+    
+    }
+
+                                                                               /*    product1    */
+div.product1text{font-size: 25px;
+                    font-family:'Calibri';
+                    font-weight: 300;
+                    font-size: 10px!important;
+                    width: 195px!important;
+                    text-align: left;
+                    background: black ;
+                    padding-left: 2%;
+                    color:darkgrey;
+                    padding-top: 45px;
+                        }
+table.p1table{width: 1px!important;}
+div.product1pic{
+    padding-top: 70px;
+    background-color:darkgrey;
+                    width:195!important;
+                    height: 40px;
+                  }
+div.product1{align-items: center;
+                     display: table;
+                     width: 400px!important;
+                       }
+#p2box{width: 195px;}
+h1.product1head{text-align: center ;
+                font-size: 20px;
+                text-decoration: underline;}
+#pbox{float:left;
+        height: 600px;
+                }
+#pbox a{background-color:#FFF225;
+    border:2px black;
+    color: black;
+    padding: 5px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 5px;
+    font-family:'Calibri';
+    }
+img.p1pic{width: 200px!important;}
+p.pctext{font-size: 20px;font-weight: 800;text-align: center;}
+table.p1table{color:darkgray;width: 700px;}
+#p1button{padding-left: 2% !important;padding-top: 100px;}
+.p1lpic{width: 100%;background-color:darkgray;}
+
+
+
+/*product 2                                          */
+.p2car{width: 680px;height: 550px !important;}
+
+img.p2pic{width:170px !important;}
+
+               /*     contactus      */
+div.contactlink{align-items: last baseline;
+                display: flex;
+                justify-content: space-evenly;
+               }
+div.contactlink a{text-decoration: none;
+                font-size: 10px!important;
+                color: darkgray;
+                font-family:'Calibri';}
+#cocontacklink{background-color: darkgrey;height: 20px, im !important;}
+
+#cocontacklink1{padding-left: 50px!important;  background-color: black;height:280px ;align-items: first baseline;color: darkgrey;text-decoration: none;} /*////////////////////notchanged/////////////////*/
+
+
+
+
+                /*                           product 3                               */
+
+img.p3pic{width: 250px !important;}
+#p2box{float:left;
+                    height: 1250px;
+                            }
+              
+#p2box a{background-color:#FFF225;
+                border:2px black;
+                color: black;
+                padding: 5px 50px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 25px;
+                font-weight: 600;
+                border-radius: 5px;
+                font-family:'Calibri';
+                }
+
+  #pcarousel{width: 20px !important;height: 20px !important;}
+
+th,td{padding: 10px;}  
+th{text-decoration: underline;}   
+img.p3car{width:220px!important;} 
+
+.prevp3-btn {
+  top: 800px!important;
+  left: 50px !important;
+}
+
+.nextp3-btn {
+  top: 800px!important;
+  left: 100px !important;;
+}
+
+ /*                            comparetext                             */
+
+div.introtext table,th,td {
+                            border-collapse: collapse;
+                           
+                          }
+.introtext{background-color: black;}
+
+div.introtext table{border-spacing: 1px;align-items: center!important;
+                    border-radius: 10px;}
+
+.introtext p {text-decoration: underline;font-family: calibri;color: darkgrey;padding-bottom: 40px;}
+
+.contactlink {padding-left: 100px;  background-color:darkgrey;align-items: first baseline;color: darkgrey;text-decoration: none;}
+
+table.ctable{color: black;font-family: calibri;width: 10px!important;font-size: 10px!important;align-content: baseline !important;margin-left: -100px;}
+  
+
+ /*                           payment gateway                      */
+.container{display:flex;justify-content: center; background-color: darkgray;
+    background-image: -webkit-image-set("https://res.cloudinary.com/dafpg6hn0/image/upload/v1719165065/Black_logo_for_B_W_print_etylrj.png" );background-size:1500px ;
+    align-items:center;
+          min-height: 100vh; }
+
+.row{background-color:white;
+    opacity: 0.6;
+width: 250px !important;;
+border-radius: 10px;
+font-size: 18px;
+padding: 20px;
+
+
+}
+img.pglogo{height: 20px;}
+.inputbox{padding: 5px;}
+.input{align-items: flex-ends;}
+ .row:hover{opacity: 1;}
+ .pgbutton{width: 200px !important;background-color:yellow;height: 30px;font-size: 20px;font-weight: 600;}
+
+
+
+/*                       horizontal carousel                    */
+  
+#carousel {
+    display: flex;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+  
+    margin: 0 auto 0 auto;
+    width: 90vw;
+    height: fit-content;
+    
+    border: solid #F3E6FF .5px;
+  }
+  
+  #carousel::-webkit-scrollbar {
+    display: none; 
+    -webkit-overflow-scrolling: touch; 
+  }
+  
+  .itemcaro {padding: 20px;
+    width: 10px!important;
+    min-width: 600px;
+    min-height: 25vh;
+    margin: 15px;
+  
+    font-size: 10px;
+    text-align: center;
+   
+    background-color:darkgray;
+    border-radius: 7px;
+  }
+  #carousel{width:680px;}
+
+
+                                /*            cursor effect          */
+  .cursor {
+    width: 20px;
+    height: 20px;
+    background-color: #495057;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9999;
+    pointer-events: none;
+    transition: transform 0.3s;
+    opacity: 0; /* Initially hidden */
+}
+
+
+/*        colorbutton                       */
+.carousel-btn {
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .prev3-btn {
+    top: 450px!important;
+    left: 20px !important;
+  }
+
+  .next3-btn {
+    top: 450px !important;
+    left:20px !important;
+  }
+  .prev2-btn {
+    top: 450px!important;
+    left: 20px !important;
+  }
+
+  .next2-btn {
+    top: 450px!important;
+    left:80px !important;
+  }
+
+
+
+  /*rental                                           */
+  img.rpic{width:250px !important;}
+
+  #pbox{width: 195 !important;}
+
+#radbutton{display: flex;align-items: center;justify-content: space-evenly;width: 0px;}
+#radbutton a.ricon{width: 10px !important;}
+img.radlog{height: 20px !important;}
+a#ricon{width:0px !important;background-color: white !important; padding: none !important;padding-left: none !important;}
+p.rtext{font-size: 10px;}
+
+
+
+  }
+
+
+
+
+
+
+  @media(max-width:1100px){*{box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif!important;
+box-sizing: border-box;
+object-fit: contain;}
+body{padding: 0%;
+    margin: 0%;}
+
+div.menu{
+        font-size: 10px;
+    display: inline;
+    position: sticky;
+    z-index: 999;}
+ul.options{list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    text-align: center;
+    }
+
+li {float: left;}    
+ul.options li a{display: inline-block;
+    padding: 15px;                                  /* with out padding collapse*/
+     padding-bottom: 0%;
+    list-style-type:none;
+    text-decoration: none;
+    color: black;}
+
+ul.options{position: -webkit-sticky; 
+    position: sticky;
+top: 0%;}
+
+ul.option a:hover{background-color:transparent;
+    color: darkgray;}
+
+div.introtext{font-size: 15px;
+    
+    font-weight: 600;
+text-align: center;
+color: black;
+
+}
+
+img.lpic{height: 20px;}
+img.insta{height: 20px;}
+img.lin{height: 20px;}
+.homepic1{background-color: darkgray;height: 230px;
+}
+p.htext{padding-top: 40px;}
+
+.homepic{background-color: black;height:150px;padding-top: 40px;}
+
+img.bpic2{height: 100px;left: 500px;padding-left: 40px;}
+
+img.bpic1{height: 100px;}
+
+.bikebutton{padding-left: 5%;padding-bottom: 10px;}
+img.hpic2{width: 400px;}
+p.head{text-align: center;}
+p#modelname{text-align: center;}
+                                    /*             downlink                      */
+
+ul#submenu {text-decoration: none;
+    list-style-type: none;
+        opacity: 1;
+        left: 50px;
+        position: fixed;
+        display:flex;
+        flex-direction: column;
+        background-color:white;
+        border-radius: 10px;
+        padding: 10px !important;
+       
+       }
+
+ul#submenu a{
+text-align: center;
+text-decoration: none;}
+
+ul#submenu a:hover{color: white;}   
+
+#submenu{left: 0;
+opacity: 0;position: absolute;visibility:hidden;z-index: 1;}
+
+li:hover ul#submenu{opacity: 1;visibility: visible;background-color:darkgrey;min-width: 250px;}
+
+#submenu li{float: none;width: 100%;}
+
+
+                                          /*     floting button         */
+div.floatingbutton{
+            position:fixed;
+            height: 100px;
+             width: 100px;
+            top: 500px;
+            left: 300;
+            margin: 25px 75px;}
+div.floatingbutton a{background-color:#FFF225;
+                color: black;
+                padding: 10px 25px;
+                text-align: center;
+                text-decoration: none;
+                display: inline;
+                font-size: 15px;
+                font-weight: 600;
+                border-radius: 5px;
+                font-family:'Calibri';
+                }
+div.floatingbutton :hover{padding:15px 30px;}
+
+ul.footer{list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    text-align: center;
+    overflow: hidden;}
+
+ul.footer li a{display: inline-block;
+    list-style-type: none;
+    padding: 40px;                                     /* with out padding collapse*/ 
+    font-size: 20px;
+    font-weight: 600f;
+    padding-bottom: 20px;
+    list-style-type:none;
+    text-decoration: none;
+    color: black;}
+
+ul.footer{position: -webkit-sticky; 
+        position: sticky;
+         top: 100%;}
+
+ul.options li a:hover,
+ul.footer a:hover,
+ul.options li a.active,
+ul.footer a.active{background-color:transparent;
+                   color: darkgrey;
+                font-size: 15px;}
+
+ div.biketext{font-size: 30px;
+                    font-weight: 600;
+                text-align: center;
+                color:darkgray;
+                    }
+div.introtext2{font-size: 30px;
+                        font-weight: 600;
+                    text-align: left;
+                    color: black;
+                      }
+
+div.bikepics{display: flex;
+            padding-bottom: 100px; 
+            flex-direction: column;
+            background-color: black;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly ;
+            gap: 20px;
+
+            }
+div.bikepic:hover{height: 400px;
+width: 50%;}
+
+div.bikepic{background-color: darkgrey;
+            width: 45%;
+             border-radius: 30px;}
+div.bikepic a{background-color:#FFF225;
+                border:2px black;
+                color: black;
+                padding: 5px 50px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 25px;
+                font-weight: 600;
+                border-radius: 5px;
+                font-family:'Calibri';
+                }
+
+                                                                     /* ABOUT US TEXT DESIGN */
+div.abouttext{font-size: 25px;
+            font-family:'Calibri';
+            font-weight: 300;
+            font-size: 25px;
+            width: 50%;
+            text-align: right;
+            background: black ;
+            color: darkgrey;
+            padding-right: 2%;
+            }
+
+.apic{width: 750px;}
+div.aboutpic{background-color:darkgrey;
+            width: 50%;
+            height: 432px;}
+div.aboutus{align-items: center;
+             display: table;
+            
+       }
+h1.abouthead{text-align: center ;
+             font-size: 30px;
+            text-decoration: underline;}
+#box{float:left;
+    height: 600px;
+    
+    }
+
+                                                                               /*    product1    */
+div.product1text{font-size: 25px;
+                    font-family:'Calibri';
+                    font-weight: 300;
+                    font-size: 25px;
+                    width: 50%;
+                    text-align: left;
+                    background: black ;
+                    padding-left: 2%;
+                    color:darkgrey;
+                    padding-top: 45px;
+                        }
+div.product1pic{
+    padding-top: 70px;
+    background-color:darkgrey;
+                    width: 50%;
+                    height: 400px;
+                  }
+div.product1{align-items: center;
+                     display: table;
+                       }
+h1.product1head{text-align: center ;
+                font-size: 30px;
+                text-decoration: underline;}
+#pbox{float:left;
+        height: 600px;
+                }
+#pbox a{background-color:#FFF225;
+    border:2px black;
+    color: black;
+    padding: 5px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 5px;
+    font-family:'Calibri';
+    }
+img.p1pic{width: 900px;}
+p.pctext{font-size: 20px;font-weight: 800;text-align: center;}
+table.p1table{color:darkgray;width: 700px;}
+#p1button{padding-left: 28%;}
+.p1lpic{width: 100%;background-color:darkgray;}
+
+
+
+/*product 2                                          */
+.p2car{width: 680px;height: 550px !important;}
+
+img.p2pic{width:750px ;}
+
+               /*     contactus      */
+div.contactlink{align-items: last baseline;
+                display: flex;
+                justify-content: space-evenly;
+               }
+div.contactlink a{text-decoration: none;
+                font-size: 25px;
+                color: darkgray;
+                font-family:'Calibri';}
+#cocontacklink{background-color: darkgrey;height:200px}
+
+#cocontacklink1{padding-left: 100px;  background-color: black;height:280px ;align-items: first baseline;color: darkgrey;text-decoration: none;} /*////////////////////notchanged/////////////////*/
+
+#pcarousel{width: 680px;height: 500px;}
+
+
+                /*                           product 3                               */
+
+img.p3pic{width: 750px;}
+#p2box{float:left;
+                    height: 1250px;
+                            }
+#p2box a{background-color:#FFF225;
+                border:2px black;
+                color: black;
+                padding: 5px 50px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 25px;
+                font-weight: 600;
+                border-radius: 5px;
+                font-family:'Calibri';
+                }
+
+th,td{padding: 10px;}  
+th{text-decoration: underline;}    
+
+.prevp3-btn {
+  top: 1250px!important;
+  left: 50px;
+}
+
+.nextp3-btn {
+  top: 1250px!important;
+  left:600px;
+}
+
+ /*                            comparetext                             */
+
+div.introtext table,th,td {border: 2px solid darkgrey;
+                            border-collapse: collapse;
+                            border-spacing: 100px;
+                          }
+.introtext{background-color: black;}
+
+div.introtext table{border-spacing: 100px;
+                    border-radius: 10px;}
+
+.introtext p {text-decoration: underline;font-family: calibri;color: darkgrey;padding-bottom: 40px;}
+
+.contactlink {padding-left: 100px;  background-color:darkgrey;align-items: first baseline;color: darkgrey;text-decoration: none;}
+
+table.ctable{color: black;font-family: calibri;text-align: left;width: 1200px;font-size: 20px;padding: 50px;}
+  
+
+ /*                           payment gateway                      */
+.container{display:flex;justify-content: center; background-color: darkgray;
+    background-image: -webkit-image-set("https://res.cloudinary.com/dafpg6hn0/image/upload/v1719165065/Black_logo_for_B_W_print_etylrj.png" );background-size:1500px ;
+    align-items:center;
+          min-height: 100vh; }
+
+.row{background-color:white;
+    opacity: 0.6;
+width:500px;
+border-radius: 10px;
+font-size: 18px;
+padding: 20px;
+
+
+}
+img.pglogo{height: 20px;}
+.inputbox{padding: 5px;}
+.input{align-items: flex-ends;}
+ .row:hover{opacity: 1;}
+ .pgbutton{width:450px;background-color:yellow;height: 30px;font-size: 20px;font-weight: 600;}
+
+
+
+/*                       horizontal carousel                    */
+  
+#carousel {
+    display: flex;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+  
+    margin: 0 auto 0 auto;
+    width: 90vw;
+    height: fit-content;
+    
+    border: solid #F3E6FF .5px;
+  }
+  
+  #carousel::-webkit-scrollbar {
+    display: none; 
+    -webkit-overflow-scrolling: touch; 
+  }
+  
+  .itemcaro {padding: 20px;
+    min-width: 600px;
+    min-height: 25vh;
+    margin: 15px;
+  
+    font-size: 20px;
+    text-align: center;
+   
+    background-color:darkgray;
+    border-radius: 7px;
+  }
+  #carousel{width:680px;}
+
+
+                                /*            cursor effect          */
+  .cursor {
+    width: 20px;
+    height: 20px;
+    background-color: #495057;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9999;
+    pointer-events: none;
+    transition: transform 0.3s;
+    opacity: 0; /* Initially hidden */
+}
+
+
+/*        colorbutton                       */
+.carousel-btn {
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .prev3-btn {
+    top: 700px;
+    left: 50px;
+  }
+
+  .next3-btn {
+    top: 700px;
+    left:600px;
+  }
+  .prev2-btn {
+    top: 1100px;
+    left: 50px;
+  }
+
+  .next2-btn {
+    top: 1100px;
+    left:600px;
+  }
+
+
+
+  /*rental                                           */
+  img.rpic{width:900px ;}
+
+#radbutton{display: flex;align-items: center;justify-content: space-evenly;}
+
+
+p.rtext{font-size: 10px;}
+
+  }
+
+
+
+
+
+  
+  

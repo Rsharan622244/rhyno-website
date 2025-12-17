@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhyno automobiles</title>
+    <link rel="icon" type="image" href="https://res.cloudinary.com/dafpg6hn0/image/upload/v1719165065/Black_logo_for_B_W_print_etylrj.png">
+    
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <style>
+        
+        
+    </style>
+</head>
+<body>
+    <div class="cursor"></div>
+
+    <script>
+        const cursor = document.querySelector('.cursor');
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px) rotate(${window.scrollY}deg)`;
+            cursor.style.opacity = 1; // Show the cursor when moving
+        });
+
+        // Hide the cursor when not moving
+        document.addEventListener('mouseout', () => {
+            cursor.style.opacity = 0;
+        });
+    </script>
+    <div class="menu">
+        <ul class="options">
+            <li><a href="#"><img class="lpic" src="https://res.cloudinary.com/dafpg6hn0/image/upload/v1719165065/Black_logo_for_B_W_print_etylrj.png" > </a></li>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About us</a></li>
+            <li ><a href="#">Products</a>
+                <ul id="submenu">
+                    <li><a href="{{ url_for('se03lite') }}">SE03 Lite</a></li>
+                    <li><a href="{{ url_for('se03') }}">SE03</a></li>
+                    <li><a href="{{ url_for('se03max') }}">SE03 Max</a></li>
+                    <li><a href="{{ url_for('compare') }}">compare</a></li>
+                </ul>
+                </li>
+            <li><a href="{{ url_for('prebook') }}">Pre-book</a></li>
+            <li><a class="active" href="{{ url_for('contact') }}">Contact us</a></li>
+            <li><a href="https://www.instagram.com/accounts/login/?hl=en"><img class="insta" src="https://static.vecteezy.com/system/resources/previews/022/498/176/non_2x/3d-render-camera-icon-isolated-on-transparent-background-camera-logo-for-web-site-app-ui-and-logo-free-png.png" alt="instagram" ></a>
+                <a href="https://www.linkedin.com/login"><img class="lin" src="https://www.pagetraffic.com/blog/wp-content/uploads/2022/09/linkedin-black-logo-icon.png" alt="linkedin" >
+                </a>
+            </li>
+    </div>
+    <div class="introtext">
+        <p style="text-decoration: underline;"><br>CONTACT US<br></p>
+    </div>
+    <div class="contactlink" id="cocontacklink" >
+        <div class="item1">
+
+            <img src="https://cdn-icons-png.freepik.com/512/9946/9946319.png" alt="call" height="70px"> 
+        </div>
+        <div class="item2">
+            <img src="https://cdn-icons-png.flaticon.com/512/3686/3686989.png" alt="mail" height="70px">
+        </div>
+        <div class="item3">
+            <img src="https://cdn-icons-png.flaticon.com/512/14025/14025695.png" alt="address" height="70px">
+        </div>
+            
+    </div>
+    <div class="contactlink" id="cocontactlink1" style="padding-left: 100px;  background-color: black;height:280px ;align-items: first baseline;color: darkgrey;text-decoration: none;">
+        <div class="item" >
+            <a href="#" >Mobile no: <br><br> +91-9023987528
+            </a>
+        </div>
+        <div class="item" type="link">
+            <a href="#">Mail: <br><br> info@rhyno.in
+            </a>
+        </div>
+        <div class="item">
+            <a href="#">Address: <br> <br> Rhyno Wheels Private limited,<br> Near UG hostel gate #2,<br> Behind PDEU,
+                Raisan, <br>Gandhinagar, Gujarat, India.
+                </a>
+        </div>
+    </div>
+    <div class="footer">
+        <ul class="footer">
+             <li><a href="{{ url_for('admin_login') }}">Admin</a></li>
+            <li><a href="#">Refund policy</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a class="active" href="{{ url_for('contact') }}">Contact us</a></li>
+            <li><a href="{{ url_for('compare') }}">Products</a></li>
+            <li><a href="https://www.linkedin.com/login">Career</a></li>
+            <li><a href="{{ url_for('rentals') }}">Rentals</a></li>
+            <li><a href="https://www.instagram.com/accounts/login/?hl=en"><img class="insta" src="https://static.vecteezy.com/system/resources/previews/022/498/176/non_2x/3d-render-camera-icon-isolated-on-transparent-background-camera-logo-for-web-site-app-ui-and-logo-free-png.png" alt="instagram" ></a>
+                <a href="https://www.linkedin.com/login"><img class="lin" src="https://www.pagetraffic.com/blog/wp-content/uploads/2022/09/linkedin-black-logo-icon.png" alt="linkedin" >
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhyno automobiles</title>
+    <link rel="icon" type="image" href="https://res.cloudinary.com/dafpg6hn0/image/upload/v1719165065/Black_logo_for_B_W_print_etylrj.png">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <div class="cursor"></div>
+
+    <script>
+        const cursor = document.querySelector('.cursor');
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px) rotate(${window.scrollY}deg)`;
+            cursor.style.opacity = 1; 
+        });
+
+        document.addEventListener('mouseout', () => {
+            cursor.style.opacity = 0;
+        });
+    </script>
+    <div class="floatingbutton">
+        <a href="paymentgateway">Prebook!</a>
+    </div>
+    <div class="menu">
+        <ul class="options">
+            <li><a href="#"><img class="lpic" src="https://res.cloudinary.com/dafpg6hn0/image/upload/v1719165065/Black_logo_for_B_W_print_etylrj.png" alt="Rhyno logo"> </a></li>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About us</a></li>
+            <li ><a href="#">Products</a>
+                <ul id="submenu">
+                        <li><a href="{{ url_for('se03lite') }}">SE03 Lite</a></li>
+                        <li><a href="{{ url_for('se03') }}">SE03</a></li>
+                        <li><a href="{{ url_for('se03max') }}">SE03 Max</a></li>
+                        <li><a href="{{ url_for('compare') }}">compare</a></li>
+                </ul>
+                </li>
+            <li><a href="{{ url_for('prebook') }}">Pre-book</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact us</a></li>
+            <li><a href="https://www.instagram.com/accounts/login/?hl=en"><img class="insta" src="https://static.vecteezy.com/system/resources/previews/022/498/176/non_2x/3d-render-camera-icon-isolated-on-transparent-background-camera-logo-for-web-site-app-ui-and-logo-free-png.png" alt="instagram" ></a>
+                <a href="https://www.linkedin.com/login"><img class="lin" src="https://www.pagetraffic.com/blog/wp-content/uploads/2022/09/linkedin-black-logo-icon.png" alt="linkedin">
+                </a>
+            </li>
+    </div>
+   
+   
+    <div class="homepic1">
+        <div class="introtext" >
+            <p class="htext" ><br>“Let's Elevate Your Ride Experience With Rhyno – Where Superiority Meets Style."<br></p>
+        </div>
+         <img class="hpic2" src="https://res.cloudinary.com/dafpg6hn0/image/upload/t_editedgroupbikes/v1719288354/Copy_of_grp_xlqcgz.png" alt="bike">
+    </div>
+   
+    <div class="homepic">
+        <div class="biketext" >
+            <p ><br>OUR MODELS:<br></p>
+        </div>
+    </div>
+
+    <div class="bikepics">
+            
+            <div class="bikepic">
+                <div class="introtext2" >
+                    <p id="modelname">SE03 Lite</p>
+                </div>
+                <div class="bpic1">
+                <img class="bpic1" src="https://res.cloudinary.com/dafpg6hn0/image/upload/v1719235842/bfy2dgbrnajkqtuep7fm.png" alt="bikepic">
+                </div>
+                <div class="bikebutton" id="bikebutton">
+                    <a  id="bikebutton" href="product1.html">Check out!</a>
+                </div>
+            </div>
+            <div class="bikepic">
+                <div class="introtext2" >
+                    <p id="modelname" >SE03</p>
+                </div>
+                <img class="bpic1" src="https://i.postimg.cc/t4JD36RP/black.png" alt="bikepic" >
+                <div class="bikebutton">
+                    <a  id="bikebutton" href="product2.html">Check out!</a>
+                </div>
+            </div>
+            <div class="bikepic" >
+                <div class="introtext2" >
+                    <p id="modelname" >SE03 Max</p>
+                </div>
+                <img class="bpic2" src="https://i.postimg.cc/HkfyK8mf/blue.png" alt="bikepic">
+                <div class="bikebutton">
+                    <a id="bikebutton" href="product3.html">Check out!</a>
+                </div>
+            </div>
+           
+            <div id="carousel" class="hcar">
+                <div class="itemcaro"><h> LFP Battery :</h> <br> <br>Rhyno is equipped with Lithium Iron Phosphate (LFP) batteries,
+                    renowned for their safety features—eliminating the risk of fire associated with other
+                    Lithium batteries. These batteries boast a broader temperature range, ideal for the
+                    diverse Indian climate. Our technology enhances Rhyno's longevity, complemented
+                    by an Active Balancing Smart Battery Management System (BMS) for extended life
+                    and reduced maintenance. Each battery undergoes rigorous waterproofing tests
+                    according to IP76 standards. But it doesn't stop there—our technology goes the extra
+                    mile in ensuring the battery's lasting durability. Connect with us to discover the
+                    thoughtful engineering behind our batteries! </div>
+                <div class="itemcaro">Wider tyres : <br><br> Now, say goodbye to skidding and embrace the leaning turns!
+                    Featuring first-of-its-kind, 9.5-inch wider tyres that make this machine an enormous
+                    beast that ensures stability on different terrains such as wet roads, mud, and sand.</div>
+                <div class="itemcaro">Range prediction: <br><br> Many budget-friendly electric scooters overlook this crucial
+                    feature, causing riders to experience range anxiety. With Rhyno, you can ride with
+                    peace of mind, thanks to the scooter providing precise information about the
+                    remaining battery.</div>
+                <div class="itemcaro">Extraordinery Experience: <br> <br> Rhyno is more than just a mode of transportation. It is
+                    an experience of sheer comfort and style! A seamless fusion of minimalism,
+                    sophistication, and a touch of masculinity!</div>
+                <div class="itemcaro">Rugged and simple Design: <br><br> We’ve had enough of the EVs looking and feeling like
+                    fragile plastic toys. Often fading out and shamelessly breaking in minor accidents,
+                    ending up spending weeks and months at service stations for complex repairs. We
+                    took a bold step of making something raw, rugged, and practical. We kept it so
+                    simple that even your trusted local mechanic can understand and repair most of it. If
+                    you have reached this far, why not to take a test ride? Click here to locate your
+                    nearest dealership or book a test ride at your home!</div>
+                
+              </div>
+    </div>
+    <div class="footer">
+        <ul class="footer">
+            <li><a href="{{ url_for('admin_login') }}">Admin</a></li>
+            <li><a href="#">Refund policy</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact us</a></li>
+            <li><a href="{{ url_for('compare') }}">Products</a></li>
+            <li><a href="https://www.linkedin.com/login">Career</a></li>
+            <li><a href="{{ url_for('rentals') }}">Rentals</a></li>
+            <li><a href="https://www.instagram.com/accounts/login/?hl=en"><img class="insta" src="https://static.vecteezy.com/system/resources/previews/022/498/176/non_2x/3d-render-camera-icon-isolated-on-transparent-background-camera-logo-for-web-site-app-ui-and-logo-free-png.png" alt="instagram" ></a>
+                <a href="https://www.linkedin.com/login"><img class="lin" src="https://www.pagetraffic.com/blog/wp-content/uploads/2022/09/linkedin-black-logo-icon.png" alt="linkedin" >
+                </a>
+            </li>
+            
+        </ul>
+        
+    </div>
+    
+</body>
+</html>

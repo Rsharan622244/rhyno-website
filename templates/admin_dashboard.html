@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <style>
+    body{background:#000;color:#fff;font-family:Arial}
+    .wrap{max-width:1000px;margin:30px auto;padding:20px}
+    .cards{display:flex;gap:20px;flex-wrap:wrap}
+    .card{background:#111;padding:18px;border-radius:8px;flex:1;min-width:200px}
+    a.btn{display:inline-block;padding:8px 12px;background:#ffcc00;color:#000;border-radius:6px;text-decoration:none;margin:8px 0}
+  </style>
+</head>
+<body>
+  <div class="top">
+    <a href="{{ url_for('home') }}" style="color:white;font-size: large;font-weight: 1000;">Back to Home</a>
+  </div>
+  <div class="wrap">
+    <h1>Admin Dashboard</h1>
+    <p><a class="btn" href="{{ url_for('admin_bookings') }}">View All Bookings</a> <a class="btn" href="{{ url_for('admin_logout') }}">Logout</a></p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Total Bookings</h3>
+        <p style="font-size:28px">{{ total }}</p>
+      </div>
+
+      <div class="card">
+        <h3>Latest Bookings</h3>
+        {% if latest %}
+          <ul>
+            {% for b in latest %}
+              <li>#{{ b.id }} — {{ b.customer_name }} ({{ b.customer_email }})</li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p>No recent bookings</p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</body>
+</html>

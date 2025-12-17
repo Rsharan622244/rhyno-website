@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhyno automobiles</title>
+    <link rel="icon" type="image" href="https://res.cloudinary.com/dafpg6hn0/image/upload/v1719165065/Black_logo_for_B_W_print_etylrj.png">
+    
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <style>
+        
+        
+    </style>
+</head>
+<body>
+    <div class="cursor"></div>
+
+    <script>
+        const cursor = document.querySelector('.cursor');
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px) rotate(${window.scrollY}deg)`;
+            cursor.style.opacity = 1; // Show the cursor when moving
+        });
+
+        // Hide the cursor when not moving
+        document.addEventListener('mouseout', () => {
+            cursor.style.opacity = 0;
+        });
+    </script>
+    <div class="menu">
+        <ul class="options">
+            <li><a href="#"><img class="lpic" src="https://res.cloudinary.com/dafpg6hn0/image/upload/v1719165065/Black_logo_for_B_W_print_etylrj.png" > </a></li>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About us</a></li>
+            <li ><a  class="active" href="#">Products</a>
+                <ul id="submenu">
+                    <li><a href="{{ url_for('se03lite') }}">SE03 Lite</a></li>
+                    <li><a href="{{ url_for('se03') }}">SE03</a></li>
+                    <li><a href="{{ url_for('se03max') }}">SE03 Max</a></li>
+                    <li><a href="{{ url_for('compare') }}">compare</a></li>
+                </ul>
+                </li>
+            <li><a href="{{ url_for('prebook') }}">Pre-book</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact us</a></li>
+            <li><a href="https://www.instagram.com/accounts/login/?hl=en"><img class="insta" src="https://static.vecteezy.com/system/resources/previews/022/498/176/non_2x/3d-render-camera-icon-isolated-on-transparent-background-camera-logo-for-web-site-app-ui-and-logo-free-png.png" alt="instagram" ></a>
+                <a href="https://www.linkedin.com/login"><img class="lin" src="https://www.pagetraffic.com/blog/wp-content/uploads/2022/09/linkedin-black-logo-icon.png" alt="linkedin" >
+                </a>
+            </li>
+    </div>
+    <div class="introtext" >
+        <p ><br>Compare All<br></p>
+    </div>
+   
+    <div class="contactlink">
+        <div id="product1text" >
+            <table class="ctable">
+                        
+                <tr>
+                    <th>Specification</th>
+                    <th>  Rhyno SE03 Lite</th>
+                    <th>  Rhyno SE03 </th>
+                    <th>  Rhyno SE03 Max</th>
+                </tr>
+                <tr>
+                    <td>Battery</td>
+                    <td>1.8Kwh</td><td>2.7Kwh</td><td>2.7Kwh</td>
+                </tr>
+                <tr>
+                    <td>Battery features</td>
+                    <td>LFP with 1500 cycles
+                        <br> Active Balancing 
+                        Waterproof <br>(IP67)</td>
+                    <td>LFP with 1500 cycles
+                            <br> Active Balancing 
+                            Waterproof <br>(IP67) </td>
+                    <td>LFP with 1500 cycles
+                                <br> Active Balancing 
+                                Waterproof <br>(IP67)</td>
+                </tr>
+                <tr>
+                    <td>Battery warranty</td>
+                    <td>3 Years</td><td>3 Years</td><td>3 Years</td>
+                </tr>
+                <tr>
+                    <td>Charging time</td>
+                    <td>3 hours (12A)</td> <td>4 hours (12A)</td><td>4 hours (12A)</td>
+                </tr>
+                <tr>
+                    <td>Motor</td>
+                    <td>1500W</td><td>1500W</td><td>2000W</td>
+                </tr>
+                <tr>
+                    <td>Max speed</td>
+                    <td>50 km/h</td><td>55 km/h</td><td>65 km/h</td>
+                </tr>
+                <tr>
+                    <td>Warranty on electronics</td>
+                    <td>1 year</td><td>1 year</td><td>1 year</td>
+                </tr>
+                <tr>
+                    <td>Max range (@30km/h)</td>
+                    <td>100 km</td><td>150 km</td><td>120 km</td>
+                </tr>
+                <tr>
+                    <td>Max range (@45km/h)</td>
+                    <td>90 km</td><td>110 km</td><td>100 km</td>
+                </tr>
+                <tr>
+                    <td>Max range (@full speed)</td>
+                    <td>70 km</td><td>90 km</td><td>80 km</td>
+                </tr>
+                <tr>
+                    <td>Other key benefits</td>
+                    <td>Fire-safe battery
+                        Range prediction
+                        <br>Comfortable ride
+                        Stable and safe
+                        </td>
+                        <td>Fire-safe battery
+                            Range prediction
+                            <br>Comfortable ride
+                            Stable and safe
+                            </td>
+                            <td>Fire-safe battery
+                                Range prediction
+                                <br>Comfortable ride
+                                Stable and safe
+                                </td>
+                </tr>
+                
+            </table>
+        </div>
+    </div>
+    <div class="footer">
+        <ul class="footer">
+             <li><a href="{{ url_for('admin_login') }}">Admin</a></li>
+            <li><a href="#">Refund policy</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact us</a></li>
+            <li><a  class="active" href="{{ url_for('compare') }}">Products</a></li>
+            <li><a href="https://www.linkedin.com/login">Career</a></li>
+            <li><a href="{{ url_for('rentals') }}">Rentals</a></li>
+            <li><a href="https://www.instagram.com/accounts/login/?hl=en"><img class="insta" src="https://static.vecteezy.com/system/resources/previews/022/498/176/non_2x/3d-render-camera-icon-isolated-on-transparent-background-camera-logo-for-web-site-app-ui-and-logo-free-png.png" alt="instagram"></a>
+                <a href="https://www.linkedin.com/login"><img class="lin" src="https://www.pagetraffic.com/blog/wp-content/uploads/2022/09/linkedin-black-logo-icon.png" alt="linkedin" >
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</body>
+</html>
